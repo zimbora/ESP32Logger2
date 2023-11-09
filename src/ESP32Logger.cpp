@@ -2,16 +2,13 @@
 // ESP32Logger.cpp
 // Logger for ESP32 for debugging C++-code
 // https://github.com/MartinXBcn/ESP32Logger
-// Version 1.0.2
+// Version 1.0.3
 // 
-
-
-ESP32Logger Log;
-
 
 #include "ESP32Logger.h"
 #include <stdarg.h>
 
+ESP32Logger Log;
 
 void ESP32Logger::init(Print* output, ESP32Timestamp useTimestamp) {
 	_output = output;
